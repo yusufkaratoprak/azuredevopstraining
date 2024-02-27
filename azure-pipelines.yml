@@ -1,0 +1,8 @@
+stages:
+- stage: Build
+  jobs:
+    - job: BuildJob
+- stage: Deploy
+  jobs:
+    - job: DeployToTest
+    - job: DeployToProd
